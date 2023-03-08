@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Christabel's portfolio - {{ title }}</title>
     {% include 'components/css.html' %}
+
 </head>
 
 <body>
-    {% include 'components/top-nav.html' %}
-    <main class="page lanidng-page">
-    {% include 'components/hero-section.html' %}
+    {%include 'components/top-nav.html' %}
     {% block content %}
+    {% endblock %}
+
+    
+    <main class="page lanidng-page">
+        {%include 'components/hero-section.html' %}
+        {%include 'components/js.html' %}
+    
     </main>
-    {% include 'components/footer.html' %}
-    {% include 'components/js.html'%}
-    <!-- js files here -->
+    {%include 'components/footer.html' %}
 </body>
 
 </html>
